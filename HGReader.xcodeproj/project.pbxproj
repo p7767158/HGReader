@@ -16,6 +16,7 @@
 		E591B0561C892E6B006735C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E591B0541C892E6B006735C2 /* LaunchScreen.storyboard */; };
 		E591B0611C892E6B006735C2 /* HGReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B0601C892E6B006735C2 /* HGReaderTests.m */; };
 		E591B06C1C892E6B006735C2 /* HGReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B06B1C892E6B006735C2 /* HGReaderUITests.m */; };
+		E591B07C1C895243006735C2 /* HGGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B07B1C895243006735C2 /* HGGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E591B0671C892E6B006735C2 /* HGReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591B06B1C892E6B006735C2 /* HGReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGReaderUITests.m; sourceTree = "<group>"; };
 		E591B06D1C892E6B006735C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E591B07A1C895243006735C2 /* HGGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGGlobal.h; sourceTree = "<group>"; };
+		E591B07B1C895243006735C2 /* HGGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 		E591B0451C892E6B006735C2 /* HGReader */ = {
 			isa = PBXGroup;
 			children = (
+				E591B0791C89522B006735C2 /* global */,
 				E591B0491C892E6B006735C2 /* AppDelegate.h */,
 				E591B04A1C892E6B006735C2 /* AppDelegate.m */,
 				E591B04C1C892E6B006735C2 /* ViewController.h */,
@@ -162,6 +166,15 @@
 				E591B06D1C892E6B006735C2 /* Info.plist */,
 			);
 			path = HGReaderUITests;
+			sourceTree = "<group>";
+		};
+		E591B0791C89522B006735C2 /* global */ = {
+			isa = PBXGroup;
+			children = (
+				E591B07A1C895243006735C2 /* HGGlobal.h */,
+				E591B07B1C895243006735C2 /* HGGlobal.m */,
+			);
+			path = global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E591B04E1C892E6B006735C2 /* ViewController.m in Sources */,
+				E591B07C1C895243006735C2 /* HGGlobal.m in Sources */,
 				E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */,
 				E591B0481C892E6B006735C2 /* main.m in Sources */,
 			);
