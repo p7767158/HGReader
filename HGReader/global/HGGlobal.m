@@ -10,4 +10,9 @@
 
 @implementation HGGlobal
 
++ (UIFont *)defaultFont
+{
+    return [UIFont fontWithName:@"HelveticaNeue-Medium" size:16];
+}
+
 @end

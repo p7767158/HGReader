@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HGGlobal : NSObject
 
@@ -43,5 +44,7 @@ return self; \
 
 #define RGBA(r, g, b, a) \
 [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
++ (UIFont *)defaultFont;
 
 @end
