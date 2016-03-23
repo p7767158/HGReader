@@ -58,6 +58,7 @@
 		E591B06D1C892E6B006735C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591B07A1C895243006735C2 /* HGGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGGlobal.h; sourceTree = "<group>"; };
 		E591B07B1C895243006735C2 /* HGGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGGlobal.m; sourceTree = "<group>"; };
+		E5C6844E1CA2478000F39EE1 /* HGPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E591B0471C892E6B006735C2 /* main.m */,
+				E5C6844E1CA2478000F39EE1 /* HGPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -503,6 +505,8 @@
 			baseConfigurationReference = 7C61011E39CC5FCF475840C7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HGReader/HGPrefixHeader.pch";
 				INFOPLIST_FILE = HGReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huihui.HGReader;
@@ -515,6 +519,8 @@
 			baseConfigurationReference = 782C81EB152108DFEC5F2C8C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HGReader/HGPrefixHeader.pch";
 				INFOPLIST_FILE = HGReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huihui.HGReader;
