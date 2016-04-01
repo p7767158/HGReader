@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D8EF4AB83DB590870DD3A15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D4E210406C7540E5D90767 /* libPods.a */; };
+		E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E538EBC21CA3A32600B70E1E /* HGHttp.m */; };
 		E591B0481C892E6B006735C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B0471C892E6B006735C2 /* main.m */; };
 		E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B04A1C892E6B006735C2 /* AppDelegate.m */; };
 		E591B04E1C892E6B006735C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B04D1C892E6B006735C2 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		65D4E210406C7540E5D90767 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		782C81EB152108DFEC5F2C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7C61011E39CC5FCF475840C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E538EBC11CA3A32600B70E1E /* HGHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGHttp.h; sourceTree = "<group>"; };
+		E538EBC21CA3A32600B70E1E /* HGHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGHttp.m; sourceTree = "<group>"; };
 		E591B0431C892E6B006735C2 /* HGReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591B0471C892E6B006735C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E591B0491C892E6B006735C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E538EBBF1CA3A30C00B70E1E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E538EBC01CA3A30C00B70E1E /* tools */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E538EBC01CA3A30C00B70E1E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				E538EBC11CA3A32600B70E1E /* HGHttp.h */,
+				E538EBC21CA3A32600B70E1E /* HGHttp.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		E591B03A1C892E6B006735C2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +149,7 @@
 		E591B0451C892E6B006735C2 /* HGReader */ = {
 			isa = PBXGroup;
 			children = (
+				E538EBBF1CA3A30C00B70E1E /* common */,
 				E591B0791C89522B006735C2 /* global */,
 				E591B0491C892E6B006735C2 /* AppDelegate.h */,
 				E591B04A1C892E6B006735C2 /* AppDelegate.m */,
@@ -363,6 +384,7 @@
 				E591B04E1C892E6B006735C2 /* ViewController.m in Sources */,
 				E591B07C1C895243006735C2 /* HGGlobal.m in Sources */,
 				E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */,
+				E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */,
 				E591B0481C892E6B006735C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
