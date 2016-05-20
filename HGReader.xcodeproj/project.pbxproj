@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D8EF4AB83DB590870DD3A15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D4E210406C7540E5D90767 /* libPods.a */; };
 		E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E538EBC21CA3A32600B70E1E /* HGHttp.m */; };
+		E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */; };
+		E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */; };
+		E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */; };
 		E591B0481C892E6B006735C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B0471C892E6B006735C2 /* main.m */; };
 		E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B04A1C892E6B006735C2 /* AppDelegate.m */; };
 		E591B04E1C892E6B006735C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B04D1C892E6B006735C2 /* ViewController.m */; };
@@ -18,6 +20,7 @@
 		E591B0611C892E6B006735C2 /* HGReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B0601C892E6B006735C2 /* HGReaderTests.m */; };
 		E591B06C1C892E6B006735C2 /* HGReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B06B1C892E6B006735C2 /* HGReaderUITests.m */; };
 		E591B07C1C895243006735C2 /* HGGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E591B07B1C895243006735C2 /* HGGlobal.m */; };
+		E8DB6DAB154B0C42B1E7D61F /* libPods-HGReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2799DE209E88F89DFD82E4D1 /* libPods-HGReader.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65D4E210406C7540E5D90767 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		782C81EB152108DFEC5F2C8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		7C61011E39CC5FCF475840C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1108D2713B9743EC04A931D5 /* Pods-HGReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGReader/Pods-HGReader.debug.xcconfig"; sourceTree = "<group>"; };
+		2799DE209E88F89DFD82E4D1 /* libPods-HGReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D586D2E6C53ACA413DE4A760 /* Pods-HGReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGReader/Pods-HGReader.release.xcconfig"; sourceTree = "<group>"; };
 		E538EBC11CA3A32600B70E1E /* HGHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGHttp.h; sourceTree = "<group>"; };
 		E538EBC21CA3A32600B70E1E /* HGHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGHttp.m; sourceTree = "<group>"; };
+		E547A9EB1CB600DA00E7E7CA /* HHWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHWebImageManager.h; sourceTree = "<group>"; };
+		E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHWebImageManager.m; sourceTree = "<group>"; };
+		E547A9EE1CB6082800E7E7CA /* UIImageView+HHWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HHWebCache.h"; sourceTree = "<group>"; };
+		E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHWebCache.m"; sourceTree = "<group>"; };
+		E547A9F11CB6093700E7E7CA /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		E591B0431C892E6B006735C2 /* HGReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591B0471C892E6B006735C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E591B0491C892E6B006735C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D8EF4AB83DB590870DD3A15 /* libPods.a in Frameworks */,
+				E8DB6DAB154B0C42B1E7D61F /* libPods-HGReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,19 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61683BEA5764182760DFB053 /* Frameworks */ = {
+		464A52E86FE5B60B2E33FCD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65D4E210406C7540E5D90767 /* libPods.a */,
+				2799DE209E88F89DFD82E4D1 /* libPods-HGReader.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		944A3F278B1286C7EDC76B19 /* Pods */ = {
+		BA4EF85B9BF0D04618E453E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C61011E39CC5FCF475840C7 /* Pods.debug.xcconfig */,
-				782C81EB152108DFEC5F2C8C /* Pods.release.xcconfig */,
+				1108D2713B9743EC04A931D5 /* Pods-HGReader.debug.xcconfig */,
+				D586D2E6C53ACA413DE4A760 /* Pods-HGReader.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -124,6 +133,19 @@
 			path = tools;
 			sourceTree = "<group>";
 		};
+		E547A9EA1CB600C100E7E7CA /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E547A9F11CB6093700E7E7CA /* UIImage+ImageEffects.h */,
+				E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */,
+				E547A9EB1CB600DA00E7E7CA /* HHWebImageManager.h */,
+				E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */,
+				E547A9EE1CB6082800E7E7CA /* UIImageView+HHWebCache.h */,
+				E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		E591B03A1C892E6B006735C2 = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +153,8 @@
 				E591B05F1C892E6B006735C2 /* HGReaderTests */,
 				E591B06A1C892E6B006735C2 /* HGReaderUITests */,
 				E591B0441C892E6B006735C2 /* Products */,
-				944A3F278B1286C7EDC76B19 /* Pods */,
-				61683BEA5764182760DFB053 /* Frameworks */,
+				BA4EF85B9BF0D04618E453E5 /* Pods */,
+				464A52E86FE5B60B2E33FCD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +171,7 @@
 		E591B0451C892E6B006735C2 /* HGReader */ = {
 			isa = PBXGroup;
 			children = (
+				E547A9EA1CB600C100E7E7CA /* test */,
 				E538EBBF1CA3A30C00B70E1E /* common */,
 				E591B0791C89522B006735C2 /* global */,
 				E591B0491C892E6B006735C2 /* AppDelegate.h */,
@@ -207,12 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E591B0701C892E6B006735C2 /* Build configuration list for PBXNativeTarget "HGReader" */;
 			buildPhases = (
-				29671C44973FFD2D92770164 /* Check Pods Manifest.lock */,
+				6C959F04839B2DAA48FF3F2F /* 📦 Check Pods Manifest.lock */,
 				E591B03F1C892E6B006735C2 /* Sources */,
 				E591B0401C892E6B006735C2 /* Frameworks */,
 				E591B0411C892E6B006735C2 /* Resources */,
-				390027751512F8AB748A84AD /* Embed Pods Frameworks */,
-				1FC8B5FD5E9654774B0476C8 /* Copy Pods Resources */,
+				D6F6581010356E86D7744338 /* 📦 Embed Pods Frameworks */,
+				460E3790BAE6277CBAC8B68E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,29 +352,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FC8B5FD5E9654774B0476C8 /* Copy Pods Resources */ = {
+		460E3790BAE6277CBAC8B68E /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HGReader/Pods-HGReader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		29671C44973FFD2D92770164 /* Check Pods Manifest.lock */ = {
+		6C959F04839B2DAA48FF3F2F /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,19 +382,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		390027751512F8AB748A84AD /* Embed Pods Frameworks */ = {
+		D6F6581010356E86D7744338 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HGReader/Pods-HGReader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -381,11 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */,
+				E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */,
 				E591B04E1C892E6B006735C2 /* ViewController.m in Sources */,
 				E591B07C1C895243006735C2 /* HGGlobal.m in Sources */,
 				E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */,
 				E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */,
 				E591B0481C892E6B006735C2 /* main.m in Sources */,
+				E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +550,7 @@
 		};
 		E591B0711C892E6B006735C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C61011E39CC5FCF475840C7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 1108D2713B9743EC04A931D5 /* Pods-HGReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -538,7 +564,7 @@
 		};
 		E591B0721C892E6B006735C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 782C81EB152108DFEC5F2C8C /* Pods.release.xcconfig */;
+			baseConfigurationReference = D586D2E6C53ACA413DE4A760 /* Pods-HGReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #pragma mark - MoreViewController
 
@@ -14,6 +15,7 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) id dataObject;
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -24,6 +26,9 @@
     [super viewDidLoad];
     //self.view.backgroundColor = UIColor.greenColor;
     //self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@""] placeholderImage:[UIImage imageNamed:@""] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -67,6 +72,8 @@
     [_pageVC setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     [self addChildViewController:_pageVC];
     [self.view addSubview:self.pageVC.view];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
 }
 
 - (void)didReceiveMemoryWarning {
