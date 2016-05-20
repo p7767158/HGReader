@@ -19,7 +19,7 @@ static double const kTimeout = 10.0;
 
 @implementation HGHttp
 
-- (instancetype)sharedHttp
++ (instancetype)sharedHttp
 {
     static dispatch_once_t onceToken;
     static HGHttp *hgHttp = nil;
@@ -45,7 +45,7 @@ static double const kTimeout = 10.0;
                                success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
-    return [self.manager GET:URLString parameters:parameters success:success failure:failure];
+    return [self.manager GET:URLString parameters:parameters progress:nil success:success failure:failure];
 }
 
 @end

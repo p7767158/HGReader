@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString const * kHttpSubfix = @"&deviceid=6A1DBD4F-3726-4944-B557-6F9157C77138&ver=1.3.0&build=1.3.0&lan=zh&ua=ios&platform=ios&chan=1&appid=1037583098&qd=1001";
-static NSString const * kRecommendApi = @"http://qishu.easebook.cn/api/v2/book/recommend?page=%@&page.size=20&uid=";
+static NSString * const kHttpSubfix = @"&deviceid=707EB55C-A184-4EC7-AB70-AE0D0EB7AA22&ver=2.4.0&build=2.4.0&lan=zh&ua=ios&platform=ios&chan=1&appid=389983208&qd=1001";
+static NSString * const kRecommendApi = @"http://qishu.easebook.cn/api/v2/book/recommend?page=%lld&page.size=20&uid=%@";
 
 @interface HGHttp : NSObject
 
-- (instancetype)sharedHttp;
++ (instancetype)sharedHttp;
+
+- (nullable NSURLSessionDataTask *)GET:(nullable NSString *)URLString
+                            parameters:(nullable id)parameters
+                               success:(nullable void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+                               failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
 
 @end
