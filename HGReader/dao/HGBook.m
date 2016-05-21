@@ -41,4 +41,15 @@
     }];
 }
 
++ (void)tryReadByBid:(long long)bid succ:(void (^)(NSString *))succBlock fail:(void(^)())failBlock
+{
+    [[HGHttp sharedTxtHttp] GET:[NSString stringWithFormat:kTryReadApi, bid, kHttpSubfix] parameters:nil success:^(NSURLSessionDataTask * _Nonnull dataTask, id _Nullable bookTxt) {
+        NSString *str = [[NSString alloc] initWithData:bookTxt encoding:NSUTF16LittleEndianStringEncoding];
+        succBlock(str);
+
+    } failure:^(NSURLSessionDataTask * _Nullable dataTask, NSError * _Nonnull error) {
+        failBlock();
+    }];
+}
+
 @end

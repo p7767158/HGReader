@@ -15,4 +15,19 @@
     return [UIFont fontWithName:@"HelveticaNeue-Medium" size:16];
 }
 
++ (NSAttributedString *)makeAttString:(NSString *)str withFont:(UIFont *)font withLineSpacing:(CGFloat)lineSpacing withColor:(UIColor *)color
+{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:lineSpacing];
+    if (!str) {
+        str = @"";
+    }
+    return [[NSAttributedString alloc] initWithString:str
+                                           attributes:@{
+                                                        NSParagraphStyleAttributeName:paragraphStyle,
+                                                        NSFontAttributeName:font,
+                                                        NSForegroundColorAttributeName:color
+                                                        }];
+}
+
 @end

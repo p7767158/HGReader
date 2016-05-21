@@ -11,7 +11,7 @@
 
 @interface HGBook : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, assign) long bid;
+@property (nonatomic, assign) long long bid;
 @property (nonatomic, copy) NSString *author;
 @property (nonatomic, assign) double createDate;
 @property (nonatomic, copy) NSString *coverUrl;
@@ -26,5 +26,6 @@
 @property (nonatomic, copy) NSString *nbpSize;
 
 + (void)getBooksByPage:(NSInteger)page succ:(void (^)(NSArray *, NSString *))succBlock fail:(void(^)())failBlock;
++ (void)tryReadByBid:(long long)bid succ:(void (^)(NSString *))succBlock fail:(void(^)())failBlock;
 
 @end

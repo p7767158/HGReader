@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5387FB91CF0306100973B87 /* HGReadTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5387FB81CF0306100973B87 /* HGReadTxtViewController.m */; };
+		E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E5387FBC1CF039B000973B87 /* NSAttributedString+HGReaderPage.m */; };
+		E5387FC01CF0409C00973B87 /* HGShowTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5387FBF1CF0409C00973B87 /* HGShowTxtViewController.m */; };
 		E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E538EBC21CA3A32600B70E1E /* HGHttp.m */; };
 		E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */; };
 		E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */; };
@@ -48,6 +51,12 @@
 		1108D2713B9743EC04A931D5 /* Pods-HGReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGReader/Pods-HGReader.debug.xcconfig"; sourceTree = "<group>"; };
 		2799DE209E88F89DFD82E4D1 /* libPods-HGReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HGReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D586D2E6C53ACA413DE4A760 /* Pods-HGReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGReader/Pods-HGReader.release.xcconfig"; sourceTree = "<group>"; };
+		E5387FB71CF0306100973B87 /* HGReadTxtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGReadTxtViewController.h; sourceTree = "<group>"; };
+		E5387FB81CF0306100973B87 /* HGReadTxtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGReadTxtViewController.m; sourceTree = "<group>"; };
+		E5387FBB1CF039B000973B87 /* NSAttributedString+HGReaderPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HGReaderPage.h"; sourceTree = "<group>"; };
+		E5387FBC1CF039B000973B87 /* NSAttributedString+HGReaderPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HGReaderPage.m"; sourceTree = "<group>"; };
+		E5387FBE1CF0409C00973B87 /* HGShowTxtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGShowTxtViewController.h; sourceTree = "<group>"; };
+		E5387FBF1CF0409C00973B87 /* HGShowTxtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGShowTxtViewController.m; sourceTree = "<group>"; };
 		E538EBC11CA3A32600B70E1E /* HGHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGHttp.h; sourceTree = "<group>"; };
 		E538EBC21CA3A32600B70E1E /* HGHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGHttp.m; sourceTree = "<group>"; };
 		E547A9EB1CB600DA00E7E7CA /* HHWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHWebImageManager.h; sourceTree = "<group>"; };
@@ -128,6 +137,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E5387FB61CF0303800973B87 /* read */ = {
+			isa = PBXGroup;
+			children = (
+				E5387FB71CF0306100973B87 /* HGReadTxtViewController.h */,
+				E5387FB81CF0306100973B87 /* HGReadTxtViewController.m */,
+				E5387FBE1CF0409C00973B87 /* HGShowTxtViewController.h */,
+				E5387FBF1CF0409C00973B87 /* HGShowTxtViewController.m */,
+			);
+			path = read;
+			sourceTree = "<group>";
+		};
+		E5387FBA1CF0399300973B87 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E5387FBB1CF039B000973B87 /* NSAttributedString+HGReaderPage.h */,
+				E5387FBC1CF039B000973B87 /* NSAttributedString+HGReaderPage.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		E538EBBF1CA3A30C00B70E1E /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +199,7 @@
 		E55FA2581CEF13BC009469C8 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E5387FB61CF0303800973B87 /* read */,
 				E55FA25C1CEF144D009469C8 /* home */,
 				E55FA2591CEF140C009469C8 /* HGHomeTabBarController.h */,
 				E55FA25A1CEF140C009469C8 /* HGHomeTabBarController.m */,
@@ -213,6 +243,7 @@
 		E591B0451C892E6B006735C2 /* HGReader */ = {
 			isa = PBXGroup;
 			children = (
+				E5387FBA1CF0399300973B87 /* components */,
 				E55FA2581CEF13BC009469C8 /* views */,
 				E55FA2541CEF0E6E009469C8 /* dao */,
 				E547A9EA1CB600C100E7E7CA /* test */,
@@ -450,16 +481,19 @@
 			files = (
 				E55FA2621CEF1A37009469C8 /* HGRecommendBookListCell.m in Sources */,
 				E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */,
+				E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */,
 				E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */,
 				E55FA25F1CEF147F009469C8 /* HGRecommendBooksViewController.m in Sources */,
 				E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */,
 				E591B04E1C892E6B006735C2 /* ViewController.m in Sources */,
+				E5387FC01CF0409C00973B87 /* HGShowTxtViewController.m in Sources */,
 				E591B07C1C895243006735C2 /* HGGlobal.m in Sources */,
 				E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */,
 				E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */,
 				E591B0481C892E6B006735C2 /* main.m in Sources */,
 				E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */,
 				E55FA25B1CEF140C009469C8 /* HGHomeTabBarController.m in Sources */,
+				E5387FB91CF0306100973B87 /* HGReadTxtViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

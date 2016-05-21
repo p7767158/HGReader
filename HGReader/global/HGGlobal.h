@@ -46,5 +46,6 @@ return self; \
 [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
 + (UIFont *)defaultFont;
++ (NSAttributedString *)makeAttString:(NSString *)str withFont:(UIFont *)font withLineSpacing:(CGFloat)lineSpacing withColor:(UIColor *)color;
 
 @end

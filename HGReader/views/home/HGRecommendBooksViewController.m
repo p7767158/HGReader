@@ -9,8 +9,9 @@
 #import "HGRecommendBooksViewController.h"
 #import "HGRecommendBookListCell.h"
 #import "HGBook.h"
+#import "HGReadTxtViewController.h"
 
-@interface HGRecommendBooksViewController()<UITableViewDataSource>
+@interface HGRecommendBooksViewController()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *list;
 @property (nonatomic, strong) NSMutableArray *books;
@@ -63,6 +64,7 @@
     if (!_list) {
         _list = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
         _list.dataSource = self;
+        _list.delegate = self;
         _list.rowHeight = 160;
         _list.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_list registerClass:HGRecommendBookListCell.class forCellReuseIdentifier:recommendBookListCell];
@@ -70,7 +72,7 @@
     return _list;
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - UITableViewDataSource & UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -82,6 +84,20 @@
     HGRecommendBookListCell *cell = [tableView dequeueReusableCellWithIdentifier:recommendBookListCell forIndexPath:indexPath];
     [cell updateWithBook:self.books[indexPath.row]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [HGBook tryReadByBid:((HGBook *)self.books[indexPath.row]).bid succ:^(NSString *previewTxt) {
+        if (previewTxt.length > 0) {
+            HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:previewTxt];
+            readVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:readVC animated:YES];
+        }
+        
+    } fail:^{
+        
+    }];
 }
 
 @end

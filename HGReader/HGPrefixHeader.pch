@@ -10,5 +10,6 @@
 #define HGPrefixHeader_pch
 
 #import "Masonry.h"
+#import "HGGlobal.h"
 
 #endif /* HGPrefixHeader_pch */
