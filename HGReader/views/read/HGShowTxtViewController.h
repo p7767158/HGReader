@@ -10,8 +10,6 @@
 
 @interface HGShowTxtViewController : UIViewController
 
-- (instancetype)initWithAttTxt:(NSAttributedString *)txt;
-
-@property (nonatomic, strong) UITextView *textView;
+- (instancetype)initWithAttTxt:(NSAttributedString *)txt withPageTxt:(NSAttributedString *)pageTxt;
 
 @end

@@ -14,6 +14,7 @@
 		E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */; };
 		E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */; };
 		E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */; };
+		E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E55B84D51CF2E0A200D9B365 /* HGColor.m */; };
 		E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA2561CEF0EBB009469C8 /* HGBook.m */; };
 		E55FA25B1CEF140C009469C8 /* HGHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA25A1CEF140C009469C8 /* HGHomeTabBarController.m */; };
 		E55FA25F1CEF147F009469C8 /* HGRecommendBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA25E1CEF147F009469C8 /* HGRecommendBooksViewController.m */; };
@@ -65,6 +66,8 @@
 		E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHWebCache.m"; sourceTree = "<group>"; };
 		E547A9F11CB6093700E7E7CA /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		E55B84D41CF2E0A200D9B365 /* HGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGColor.h; sourceTree = "<group>"; };
+		E55B84D51CF2E0A200D9B365 /* HGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGColor.m; sourceTree = "<group>"; };
 		E55FA2551CEF0EBB009469C8 /* HGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBook.h; sourceTree = "<group>"; };
 		E55FA2561CEF0EBB009469C8 /* HGBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGBook.m; sourceTree = "<group>"; };
 		E55FA2591CEF140C009469C8 /* HGHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGHomeTabBarController.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 			children = (
 				E538EBC11CA3A32600B70E1E /* HGHttp.h */,
 				E538EBC21CA3A32600B70E1E /* HGHttp.m */,
+				E55B84D41CF2E0A200D9B365 /* HGColor.h */,
+				E55B84D51CF2E0A200D9B365 /* HGColor.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -481,6 +486,7 @@
 			files = (
 				E55FA2621CEF1A37009469C8 /* HGRecommendBookListCell.m in Sources */,
 				E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */,
+				E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */,
 				E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */,
 				E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */,
 				E55FA25F1CEF147F009469C8 /* HGRecommendBooksViewController.m in Sources */,

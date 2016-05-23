@@ -11,5 +11,6 @@
 
 #import "Masonry.h"
 #import "HGGlobal.h"
+#import "HGColor.h"
 
 #endif /* HGPrefixHeader_pch */

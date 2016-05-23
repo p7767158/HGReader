@@ -108,7 +108,7 @@ static CGFloat kHeightMargin = 70;
 - (CGFloat)lineSpacing
 {
     if (!_lineSpacing) {
-        _lineSpacing = self.fontSize / 2.0;
+        _lineSpacing = self.fontSize / 1.2;
     }
     return _lineSpacing;
 }
@@ -116,7 +116,7 @@ static CGFloat kHeightMargin = 70;
 - (UIColor *)textColor
 {
     if (!_textColor) {
-        _textColor = [UIColor grayColor];
+        _textColor = [HGColor textColor];
     }
     return _textColor;
 }
@@ -147,7 +147,7 @@ static CGFloat kHeightMargin = 70;
 
 - (HGShowTxtViewController *)getShowTxtVC
 {
-    HGShowTxtViewController *showTxtVC = [[HGShowTxtViewController alloc] initWithAttTxt:[self.txt attributedSubstringFromRange:[self.pageRangeArray[self.currentPage] rangeValue]]];
+    HGShowTxtViewController *showTxtVC = [[HGShowTxtViewController alloc] initWithAttTxt:[self.txt attributedSubstringFromRange:[self.pageRangeArray[self.currentPage] rangeValue]] withPageTxt:[HGGlobal makeAttString:[NSString stringWithFormat:@"%ld / %lu", (long)(self.currentPage + 1), (unsigned long)self.pageRangeArray.count] withFont:[UIFont systemFontOfSize:13] withLineSpacing:0 withColor:[HGColor pageColor]]];
     return showTxtVC;
 }
 

@@ -45,11 +45,25 @@
 {
     [[HGHttp sharedTxtHttp] GET:[NSString stringWithFormat:kTryReadApi, bid, kHttpSubfix] parameters:nil success:^(NSURLSessionDataTask * _Nonnull dataTask, id _Nullable bookTxt) {
         NSString *str = [[NSString alloc] initWithData:bookTxt encoding:NSUTF16LittleEndianStringEncoding];
+        str = [HGBook addFirstLineWithStr:str];
         succBlock(str);
 
     } failure:^(NSURLSessionDataTask * _Nullable dataTask, NSError * _Nonnull error) {
         failBlock();
     }];
+}
+
++ (NSString *)addFirstLineWithStr:(NSString *)str
+{
+    NSMutableString *text = @"        ".mutableCopy;
+    [[str componentsSeparatedByString:@"\n"] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj = [obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        if (obj.length > 0) {
+            [text appendString:obj];
+            [text appendString:@"\n        "];
+        }
+    }];
+    return text;
 }
 
 @end

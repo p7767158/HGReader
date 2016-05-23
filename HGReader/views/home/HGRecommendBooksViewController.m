@@ -88,10 +88,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [HGBook tryReadByBid:((HGBook *)self.books[indexPath.row]).bid succ:^(NSString *previewTxt) {
+    HGBook *book = self.books[indexPath.row];
+    [HGBook tryReadByBid:book.bid succ:^(NSString *previewTxt) {
         if (previewTxt.length > 0) {
             HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:previewTxt];
             readVC.hidesBottomBarWhenPushed = YES;
+            readVC.navigationItem.title = book.name;
             [self.navigationController pushViewController:readVC animated:YES];
         }
         

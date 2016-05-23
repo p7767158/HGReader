@@ -11,15 +11,17 @@
 @interface HGShowTxtViewController()
 
 @property (nonatomic, strong) UILabel *showLabel;
+@property (nonatomic, strong) UILabel *pageLabel;
 
 @end
 
 @implementation HGShowTxtViewController
 
-- (instancetype)initWithAttTxt:(NSAttributedString *)txt
+- (instancetype)initWithAttTxt:(NSAttributedString *)txt withPageTxt:(NSAttributedString *)pageTxt
 {
     if (self = [super init]) {
         self.showLabel.attributedText = txt;
+        self.pageLabel.attributedText = pageTxt;
     }
     return self;
 }
@@ -28,31 +30,22 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:self.textView];
-//    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self.view).mas_offset(UIEdgeInsetsMake(0, 0, 0, 0));
-//    }];
     [self.view addSubview:self.showLabel];
+    [self.view addSubview:self.pageLabel];
     [self.showLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(20);
         make.left.equalTo(self.view).offset(20);
         make.right.equalTo(self.view).offset(-18);
+    }];
+    [self.pageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view).offset(-10);
+        make.centerX.equalTo(self.view);
     }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-}
-
-- (UITextView *)textView
-{
-    if (!_textView) {
-        _textView = [[UITextView alloc] init];
-        _textView.editable = NO;
-        [_textView setContentInset:UIEdgeInsetsMake(10, 10, -10, -10)];
-    }
-    return _textView;
 }
 
 - (UILabel *)showLabel
@@ -63,6 +56,14 @@
         _showLabel.textAlignment = NSTextAlignmentLeft;
     }
     return _showLabel;
+}
+
+- (UILabel *)pageLabel
+{
+    if (!_pageLabel) {
+        _pageLabel = [[UILabel alloc] init];
+    }
+    return _pageLabel;
 }
 
 @end
