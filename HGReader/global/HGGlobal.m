@@ -30,4 +30,9 @@
                                                         }];
 }
 
++ (long)now
+{
+    return ceil([[NSDate date] timeIntervalSince1970]);
+}
+
 @end

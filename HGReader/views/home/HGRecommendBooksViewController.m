@@ -10,6 +10,7 @@
 #import "HGRecommendBookListCell.h"
 #import "HGBook.h"
 #import "HGReadTxtViewController.h"
+#import "HGLocalBook.h"
 
 @interface HGRecommendBooksViewController()<UITableViewDataSource, UITableViewDelegate>
 
@@ -89,14 +90,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HGBook *book = self.books[indexPath.row];
-    [HGBook tryReadByBid:book.bid succ:^(NSString *previewTxt) {
-        if (previewTxt.length > 0) {
-            HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:previewTxt];
+//    [HGBook tryReadByBid:book.bid succ:^(NSString *previewTxt) {
+//        if (previewTxt.length > 0) {
+//            HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:previewTxt];
+//            readVC.hidesBottomBarWhenPushed = YES;
+//            readVC.navigationItem.title = book.name;
+//            [self.navigationController pushViewController:readVC animated:YES];
+//        }
+//        
+//    } fail:^{
+//        
+//    }];
+    
+    [HGBook downloadByBook:book succ:^(HGLocalBook *localBook) {
+        [localBook open:^(NSString *txt) {
+            HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:txt];
             readVC.hidesBottomBarWhenPushed = YES;
             readVC.navigationItem.title = book.name;
             [self.navigationController pushViewController:readVC animated:YES];
-        }
-        
+        }];
     } fail:^{
         
     }];

@@ -11,9 +11,15 @@
 		E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E5387FBC1CF039B000973B87 /* NSAttributedString+HGReaderPage.m */; };
 		E5387FC01CF0409C00973B87 /* HGShowTxtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5387FBF1CF0409C00973B87 /* HGShowTxtViewController.m */; };
 		E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = E538EBC21CA3A32600B70E1E /* HGHttp.m */; };
+		E53DF6681CF40110000B0CCF /* HGBookDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E53DF6671CF40110000B0CCF /* HGBookDB.m */; };
+		E53DF66B1CF40187000B0CCF /* HGBaseDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E53DF66A1CF40187000B0CCF /* HGBaseDB.m */; };
+		E53DF66E1CF408A7000B0CCF /* HGLocalBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E53DF66D1CF408A7000B0CCF /* HGLocalBook.m */; };
+		E53DF6711CF4380A000B0CCF /* HGTableVersionDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E53DF6701CF4380A000B0CCF /* HGTableVersionDB.m */; };
+		E53DF6741CF4423C000B0CCF /* HGSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E53DF6731CF4423C000B0CCF /* HGSession.m */; };
 		E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */; };
 		E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */; };
 		E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */; };
+		E556B32E1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E556B32D1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m */; };
 		E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E55B84D51CF2E0A200D9B365 /* HGColor.m */; };
 		E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA2561CEF0EBB009469C8 /* HGBook.m */; };
 		E55FA25B1CEF140C009469C8 /* HGHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA25A1CEF140C009469C8 /* HGHomeTabBarController.m */; };
@@ -60,12 +66,24 @@
 		E5387FBF1CF0409C00973B87 /* HGShowTxtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGShowTxtViewController.m; sourceTree = "<group>"; };
 		E538EBC11CA3A32600B70E1E /* HGHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGHttp.h; sourceTree = "<group>"; };
 		E538EBC21CA3A32600B70E1E /* HGHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGHttp.m; sourceTree = "<group>"; };
+		E53DF6661CF40110000B0CCF /* HGBookDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBookDB.h; sourceTree = "<group>"; };
+		E53DF6671CF40110000B0CCF /* HGBookDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGBookDB.m; sourceTree = "<group>"; };
+		E53DF6691CF40187000B0CCF /* HGBaseDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBaseDB.h; sourceTree = "<group>"; };
+		E53DF66A1CF40187000B0CCF /* HGBaseDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGBaseDB.m; sourceTree = "<group>"; };
+		E53DF66C1CF408A7000B0CCF /* HGLocalBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGLocalBook.h; sourceTree = "<group>"; };
+		E53DF66D1CF408A7000B0CCF /* HGLocalBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGLocalBook.m; sourceTree = "<group>"; };
+		E53DF66F1CF4380A000B0CCF /* HGTableVersionDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGTableVersionDB.h; sourceTree = "<group>"; };
+		E53DF6701CF4380A000B0CCF /* HGTableVersionDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGTableVersionDB.m; sourceTree = "<group>"; };
+		E53DF6721CF4423C000B0CCF /* HGSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSession.h; sourceTree = "<group>"; };
+		E53DF6731CF4423C000B0CCF /* HGSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSession.m; sourceTree = "<group>"; };
 		E547A9EB1CB600DA00E7E7CA /* HHWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHWebImageManager.h; sourceTree = "<group>"; };
 		E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHWebImageManager.m; sourceTree = "<group>"; };
 		E547A9EE1CB6082800E7E7CA /* UIImageView+HHWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HHWebCache.h"; sourceTree = "<group>"; };
 		E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHWebCache.m"; sourceTree = "<group>"; };
 		E547A9F11CB6093700E7E7CA /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		E556B32C1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HGCamelCaseKey.h"; sourceTree = "<group>"; };
+		E556B32D1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HGCamelCaseKey.m"; sourceTree = "<group>"; };
 		E55B84D41CF2E0A200D9B365 /* HGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGColor.h; sourceTree = "<group>"; };
 		E55B84D51CF2E0A200D9B365 /* HGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGColor.m; sourceTree = "<group>"; };
 		E55FA2551CEF0EBB009469C8 /* HGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBook.h; sourceTree = "<group>"; };
@@ -156,6 +174,8 @@
 			children = (
 				E5387FBB1CF039B000973B87 /* NSAttributedString+HGReaderPage.h */,
 				E5387FBC1CF039B000973B87 /* NSAttributedString+HGReaderPage.m */,
+				E556B32C1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.h */,
+				E556B32D1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -175,8 +195,23 @@
 				E538EBC21CA3A32600B70E1E /* HGHttp.m */,
 				E55B84D41CF2E0A200D9B365 /* HGColor.h */,
 				E55B84D51CF2E0A200D9B365 /* HGColor.m */,
+				E53DF6721CF4423C000B0CCF /* HGSession.h */,
+				E53DF6731CF4423C000B0CCF /* HGSession.m */,
 			);
 			path = tools;
+			sourceTree = "<group>";
+		};
+		E53DF6651CF400F5000B0CCF /* db */ = {
+			isa = PBXGroup;
+			children = (
+				E53DF6661CF40110000B0CCF /* HGBookDB.h */,
+				E53DF6671CF40110000B0CCF /* HGBookDB.m */,
+				E53DF6691CF40187000B0CCF /* HGBaseDB.h */,
+				E53DF66A1CF40187000B0CCF /* HGBaseDB.m */,
+				E53DF66F1CF4380A000B0CCF /* HGTableVersionDB.h */,
+				E53DF6701CF4380A000B0CCF /* HGTableVersionDB.m */,
+			);
+			path = db;
 			sourceTree = "<group>";
 		};
 		E547A9EA1CB600C100E7E7CA /* test */ = {
@@ -197,6 +232,8 @@
 			children = (
 				E55FA2551CEF0EBB009469C8 /* HGBook.h */,
 				E55FA2561CEF0EBB009469C8 /* HGBook.m */,
+				E53DF66C1CF408A7000B0CCF /* HGLocalBook.h */,
+				E53DF66D1CF408A7000B0CCF /* HGLocalBook.m */,
 			);
 			path = dao;
 			sourceTree = "<group>";
@@ -248,6 +285,7 @@
 		E591B0451C892E6B006735C2 /* HGReader */ = {
 			isa = PBXGroup;
 			children = (
+				E53DF6651CF400F5000B0CCF /* db */,
 				E5387FBA1CF0399300973B87 /* components */,
 				E55FA2581CEF13BC009469C8 /* views */,
 				E55FA2541CEF0E6E009469C8 /* dao */,
@@ -316,6 +354,7 @@
 				E591B0411C892E6B006735C2 /* Resources */,
 				D6F6581010356E86D7744338 /* 📦 Embed Pods Frameworks */,
 				460E3790BAE6277CBAC8B68E /* 📦 Copy Pods Resources */,
+				774100583FD7CA3510C92364 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,6 +501,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		774100583FD7CA3510C92364 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HGReader/Pods-HGReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D6F6581010356E86D7744338 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,22 +538,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53DF6711CF4380A000B0CCF /* HGTableVersionDB.m in Sources */,
 				E55FA2621CEF1A37009469C8 /* HGRecommendBookListCell.m in Sources */,
 				E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */,
 				E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */,
 				E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */,
 				E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */,
+				E556B32E1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m in Sources */,
 				E55FA25F1CEF147F009469C8 /* HGRecommendBooksViewController.m in Sources */,
 				E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */,
 				E591B04E1C892E6B006735C2 /* ViewController.m in Sources */,
+				E53DF66E1CF408A7000B0CCF /* HGLocalBook.m in Sources */,
 				E5387FC01CF0409C00973B87 /* HGShowTxtViewController.m in Sources */,
+				E53DF6681CF40110000B0CCF /* HGBookDB.m in Sources */,
 				E591B07C1C895243006735C2 /* HGGlobal.m in Sources */,
+				E53DF6741CF4423C000B0CCF /* HGSession.m in Sources */,
 				E591B04B1C892E6B006735C2 /* AppDelegate.m in Sources */,
 				E538EBC31CA3A32600B70E1E /* HGHttp.m in Sources */,
 				E591B0481C892E6B006735C2 /* main.m in Sources */,
 				E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */,
 				E55FA25B1CEF140C009469C8 /* HGHomeTabBarController.m in Sources */,
 				E5387FB91CF0306100973B87 /* HGReadTxtViewController.m in Sources */,
+				E53DF66B1CF40187000B0CCF /* HGBaseDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

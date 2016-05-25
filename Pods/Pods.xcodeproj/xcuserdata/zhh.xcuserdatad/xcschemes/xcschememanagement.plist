@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -42,7 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>836B031BB90CEBD79F4115C9E6E9DF54</key>
+		<key>862AA9D87598181B0891176C8601239E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8AF4D36EC3917F4694291D3E64F34B2</key>
+		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B011182F3B316F7F43F7E99A4A134152</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA8635A8DF40187E8DA2D5A9D83320CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

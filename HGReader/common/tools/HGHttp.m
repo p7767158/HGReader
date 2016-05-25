@@ -60,6 +60,7 @@ static double const kTimeout = 10.0;
         [_manager.requestSerializer setTimeoutInterval:kTimeout];
         [_manager.requestSerializer setValue:@"application/zip;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
         _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/zip", @"charset=UTF-8", nil];
     }
     return self;
 }
@@ -70,6 +71,15 @@ static double const kTimeout = 10.0;
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
 {
     return [self.manager GET:URLString parameters:parameters progress:nil success:success failure:failure];
+}
+
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
+                   parameters:(id)parameters
+                     progress:(void (^)(NSProgress * _Nonnull))downloadProgress
+                      success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+                      failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure
+{
+    return [self.manager GET:URLString parameters:parameters progress:downloadProgress success:success failure:failure];
 }
 
 - (nullable NSURLSessionTask *)download:(nullable NSString *)URLString destination:(NSURL * (^)(NSURL *targetPath, NSURLResponse *response))destination success:(nullable void (^)(NSURLResponse * _Nullable response, NSURL * _Nullable filePath))success failure:(nullable void (^)(NSError * _Nullable error))failure

@@ -47,5 +47,6 @@ return self; \
 
 + (UIFont *)defaultFont;
 + (NSAttributedString *)makeAttString:(NSString *)str withFont:(UIFont *)font withLineSpacing:(CGFloat)lineSpacing withColor:(UIColor *)color;
++ (long)now;
 
 @end

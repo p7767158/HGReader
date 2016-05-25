@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Mantle/Mantle.h>
 
+@class HGLocalBook;
 @interface HGBook : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, assign) long long bid;
@@ -27,5 +28,10 @@
 
 + (void)getBooksByPage:(NSInteger)page succ:(void (^)(NSArray *, NSString *))succBlock fail:(void(^)())failBlock;
 + (void)tryReadByBid:(long long)bid succ:(void (^)(NSString *))succBlock fail:(void(^)())failBlock;
++ (void)downloadByBook:(HGBook *)book succ:(void (^)(HGLocalBook *))succBlock fail:(void(^)())failBlock;;
+- (NSString *)filePath;
+- (void)saveWithData:(NSData *)data;
+- (void)saveChapterArray:(NSArray *)chapterArray;
+- (void)savePageRanges:(NSArray *)pageRanges;
 
 @end
