@@ -21,6 +21,8 @@
 @property (nonatomic, copy) NSString *coverUrl;
 @property (nonatomic, copy) NSString *currentDesc;
 
++ (void)getLocalBooks:(void (^)(NSArray *))finishBlock;
+
 - (NSArray *)getBookMarks;
 - (NSArray *)getChapterArrays;
 - (NSArray *)getPageRanges;

@@ -113,6 +113,7 @@
 {
     [[HGSession sharedHGSession] setUserDefault:chapterArray forKey:kBookChaperKey withBid:self.bid];
 }
+
 - (void)savePageRanges:(NSArray *)pageRanges
 {
     [[HGSession sharedHGSession] setUserDefault:pageRanges forKey:kBookPageRangesKey withBid:self.bid];
@@ -174,10 +175,7 @@
                 //judge chapter
                 if (save && [obj hasPrefix:@"第"] && [[obj componentsSeparatedByString:@" "][0] hasSuffix:@"章"]) {
                     //add info of chapter to NSArray(chapter)
-                    NSRange range = [str rangeOfString:obj];
-                    if (range.location != NSNotFound) {
-                        [chapterArray addObject:@{@"title":obj, @"range":[NSString stringWithFormat:@"%lu,%lu", (unsigned long)range.location, (unsigned long)range.length]}];
-                    }
+                    [chapterArray addObject:@{@"title":obj}];
                 }
                 [text appendString:obj];
                 [text appendString:@"\n        "];

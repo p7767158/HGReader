@@ -35,91 +35,43 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HGReader/dao/HGBook.m"
-            timestampString = "485861638.613575"
+            filePath = "HGReader/views/local/HGLocalBookListViewController.m"
+            timestampString = "486098670.643941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "+downloadByBook:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HGReader/dao/HGBook.m"
-            timestampString = "485861638.613575"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "-saveWithData:completion:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HGReader/dao/HGBook.m"
-            timestampString = "485861638.613575"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-saveWithData:completion:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HGReader/dao/HGBook.m"
-            timestampString = "485862036.496995"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "+downloadByBook:"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__25+[HGBook downloadByBook:]_block_invoke_3"
+                  symbolName = "-[HGLocalBookListViewController tableView:didSelectRowAtIndexPath:]"
                   moduleName = "HGReader"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhh/Desktop/HGReader/HGReader/dao/HGBook.m"
-                  timestampString = "485862474.579754"
+                  urlString = "file:///Users/zhh/Desktop/HGReader/HGReader/views/local/HGLocalBookListViewController.m"
+                  timestampString = "486098846.724829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "194">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__25+[HGBook downloadByBook:]_block_invoke_4"
+                  symbolName = "__67-[HGLocalBookListViewController tableView:didSelectRowAtIndexPath:]_block_invoke"
                   moduleName = "HGReader"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhh/Desktop/HGReader/HGReader/dao/HGBook.m"
-                  timestampString = "485862474.57986"
+                  urlString = "file:///Users/zhh/Desktop/HGReader/HGReader/views/local/HGLocalBookListViewController.m"
+                  timestampString = "486098846.724986"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>

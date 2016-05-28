@@ -20,4 +20,9 @@
     return RGBA(44, 44, 44, 1);
 }
 
++ (void)setTextColor
+{
+    //save user setting to NSUserDefaults
+}
+
 @end

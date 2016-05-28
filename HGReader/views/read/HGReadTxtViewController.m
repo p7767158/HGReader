@@ -77,12 +77,14 @@ static CGFloat kHeightMargin = 70;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.alpha = .4;
     [self setFullScreen:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.alpha = 1;
     [self setFullScreen:NO];
 }
 

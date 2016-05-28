@@ -72,7 +72,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HGBookDB);
 
 - (void)getBooks:(void (^)(NSArray *))finishBlock
 {
-    
+    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ ORDER BY open_time DESC", kBookTbl];
+    void (^block)(NSArray *) = ^(NSArray *res) {
+        NSMutableArray *books = @[].mutableCopy;
+        [res enumerateObjectsUsingBlock:^(NSDictionary *  _Nonnull ret, NSUInteger idx, BOOL * _Nonnull stop) {
+            HGLocalBook *book = [MTLJSONAdapter modelOfClass:HGLocalBook.class fromJSONDictionary:[ret camelCase] error:nil];
+            [books addObject:book];
+        }];
+        finishBlock(books);
+    };
+    [self doSyncRead:sql withParams:nil finishBlock:block];
 }
 
 @end

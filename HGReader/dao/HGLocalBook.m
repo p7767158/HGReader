@@ -8,6 +8,7 @@
 
 #import "HGLocalBook.h"
 #import "HGSession.h"
+#import "HGBookDB.h"
 
 @implementation HGLocalBook
 
@@ -23,6 +24,13 @@
              @"coverUrl"       :@"coverUrl",
              @"currentDesc"    :@"currentDesc"
              };
+}
+
++ (void)getLocalBooks:(void (^)(NSArray *))finishBlock
+{
+    [[HGBookDB sharedHGBookDB] getBooks:^(NSArray *localBooks) {
+        finishBlock(localBooks);
+    }];
 }
 
 - (NSString *)filePath

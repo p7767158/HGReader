@@ -8,6 +8,7 @@
 
 #import "HGHomeTabBarController.h"
 #import "HGRecommendBooksViewController.h"
+#import "HGLocalBookListViewController.h"
 
 @implementation HGHomeTabBarController
 
@@ -15,11 +16,15 @@
 {
     self = [super init];
     if (self) {
+        HGLocalBookListViewController *localBooksVC = [[HGLocalBookListViewController alloc] init];
+        UINavigationController *localNavVC = [[UINavigationController alloc] initWithRootViewController:localBooksVC];
+        localNavVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"书架" image:nil selectedImage:nil];
+        
         HGRecommendBooksViewController *recBooksVC = [[HGRecommendBooksViewController alloc] init];
         UINavigationController *recNavVC = [[UINavigationController alloc] initWithRootViewController:recBooksVC];
         recNavVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"推荐" image:nil selectedImage:nil];
         
-        [self setViewControllers:@[recNavVC]];
+        [self setViewControllers:@[localNavVC, recNavVC]];
     }
     return self;
 }

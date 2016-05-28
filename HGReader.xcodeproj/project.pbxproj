@@ -19,7 +19,9 @@
 		E547A9ED1CB600DA00E7E7CA /* HHWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EC1CB600DA00E7E7CA /* HHWebImageManager.m */; };
 		E547A9F01CB6082800E7E7CA /* UIImageView+HHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */; };
 		E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */; };
+		E54DB7701CF93E2B006ED61F /* HGLocalBookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E54DB76F1CF93E2B006ED61F /* HGLocalBookListCell.m */; };
 		E556B32E1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E556B32D1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m */; };
+		E556B3351CF5B79C00A155D8 /* HGLocalBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E556B3341CF5B79C00A155D8 /* HGLocalBookListViewController.m */; };
 		E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E55B84D51CF2E0A200D9B365 /* HGColor.m */; };
 		E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA2561CEF0EBB009469C8 /* HGBook.m */; };
 		E55FA25B1CEF140C009469C8 /* HGHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55FA25A1CEF140C009469C8 /* HGHomeTabBarController.m */; };
@@ -82,8 +84,12 @@
 		E547A9EF1CB6082800E7E7CA /* UIImageView+HHWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HHWebCache.m"; sourceTree = "<group>"; };
 		E547A9F11CB6093700E7E7CA /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		E547A9F21CB6093700E7E7CA /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		E54DB76E1CF93E2B006ED61F /* HGLocalBookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGLocalBookListCell.h; sourceTree = "<group>"; };
+		E54DB76F1CF93E2B006ED61F /* HGLocalBookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGLocalBookListCell.m; sourceTree = "<group>"; };
 		E556B32C1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HGCamelCaseKey.h"; sourceTree = "<group>"; };
 		E556B32D1CF5A27100A155D8 /* NSDictionary+HGCamelCaseKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HGCamelCaseKey.m"; sourceTree = "<group>"; };
+		E556B3331CF5B79C00A155D8 /* HGLocalBookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGLocalBookListViewController.h; sourceTree = "<group>"; };
+		E556B3341CF5B79C00A155D8 /* HGLocalBookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGLocalBookListViewController.m; sourceTree = "<group>"; };
 		E55B84D41CF2E0A200D9B365 /* HGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGColor.h; sourceTree = "<group>"; };
 		E55B84D51CF2E0A200D9B365 /* HGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGColor.m; sourceTree = "<group>"; };
 		E55FA2551CEF0EBB009469C8 /* HGBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBook.h; sourceTree = "<group>"; };
@@ -227,6 +233,17 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		E556B3321CF5B78C00A155D8 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				E556B3331CF5B79C00A155D8 /* HGLocalBookListViewController.h */,
+				E556B3341CF5B79C00A155D8 /* HGLocalBookListViewController.m */,
+				E54DB76E1CF93E2B006ED61F /* HGLocalBookListCell.h */,
+				E54DB76F1CF93E2B006ED61F /* HGLocalBookListCell.m */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
 		E55FA2541CEF0E6E009469C8 /* dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +258,7 @@
 		E55FA2581CEF13BC009469C8 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E556B3321CF5B78C00A155D8 /* local */,
 				E5387FB61CF0303800973B87 /* read */,
 				E55FA25C1CEF144D009469C8 /* home */,
 				E55FA2591CEF140C009469C8 /* HGHomeTabBarController.h */,
@@ -539,8 +557,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53DF6711CF4380A000B0CCF /* HGTableVersionDB.m in Sources */,
+				E54DB7701CF93E2B006ED61F /* HGLocalBookListCell.m in Sources */,
 				E55FA2621CEF1A37009469C8 /* HGRecommendBookListCell.m in Sources */,
 				E55FA2571CEF0EBB009469C8 /* HGBook.m in Sources */,
+				E556B3351CF5B79C00A155D8 /* HGLocalBookListViewController.m in Sources */,
 				E55B84D61CF2E0A200D9B365 /* HGColor.m in Sources */,
 				E5387FBD1CF039B000973B87 /* NSAttributedString+HGReaderPage.m in Sources */,
 				E547A9F31CB6093700E7E7CA /* UIImage+ImageEffects.m in Sources */,

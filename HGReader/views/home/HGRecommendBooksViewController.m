@@ -11,6 +11,7 @@
 #import "HGBook.h"
 #import "HGReadTxtViewController.h"
 #import "HGLocalBook.h"
+#import "HGBookDB.h"
 
 @interface HGRecommendBooksViewController()<UITableViewDataSource, UITableViewDelegate>
 
@@ -102,16 +103,31 @@
 //        
 //    }];
     
-    [HGBook downloadByBook:book succ:^(HGLocalBook *localBook) {
-        [localBook open:^(NSString *txt) {
-            HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:txt];
-            readVC.hidesBottomBarWhenPushed = YES;
-            readVC.navigationItem.title = book.name;
-            [self.navigationController pushViewController:readVC animated:YES];
+    //打开本地图书
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    if ([fileMgr fileExistsAtPath:[book filePath]]) {
+        //从DB里读取图书(整理代码时 删除，包括上方import)
+        [[HGBookDB sharedHGBookDB] getBookWithBid:book.bid finishBlock:^(NSDictionary *books) {
+            HGLocalBook *localBook = books[@(book.bid)];
+            [localBook open:^(NSString *txt) {
+                HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:txt];
+                readVC.hidesBottomBarWhenPushed = YES;
+                readVC.navigationItem.title = book.name;
+                [self.navigationController pushViewController:readVC animated:YES];
+            }];
         }];
-    } fail:^{
-        
-    }];
+    } else {
+        [HGBook downloadByBook:book succ:^(HGLocalBook *localBook) {
+            [localBook open:^(NSString *txt) {
+                HGReadTxtViewController *readVC = [[HGReadTxtViewController alloc] initWithTxtString:txt];
+                readVC.hidesBottomBarWhenPushed = YES;
+                readVC.navigationItem.title = book.name;
+                [self.navigationController pushViewController:readVC animated:YES];
+            }];
+        } fail:^{
+            
+        }];
+    }
 }
 
 @end

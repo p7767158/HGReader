@@ -19,22 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //NSString *path = [NSString stringWithFormat:@"%@/Documents/myData.text",NSHomeDirectory()];
-//    NSString *path = [NSString stringWithFormat:@"%@/Documents/%d.txt",NSHomeDirectory(), 35897];
-////    NSString *path = @"/Users/zhh/Desktop/35896.txt";
-//    NSLog(@"%@",path);
-//    NSStringEncoding enc;
-//    NSData *data = [NSData dataWithContentsOfFile:path];
-//    
-////    for (int i = 1; i<= 40; i++) {
-////        NSStringEncoding sosoEncoding = CFStringConvertEncodingToNSStringEncoding(i);
-////        NSString *str = [[NSString alloc] initWithData:data encoding:sosoEncoding];
-////        NSLog(@"%dzzzzzzzzzzzzzzzzzz%@", i, str);
-////    }
-//    
-//    
-//    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF16LittleEndianStringEncoding];
-//    string = [NSString stringWithContentsOfFile:path encoding:enc error:nil];
     
     [[HGSession sharedHGSession] _initStore];
     
